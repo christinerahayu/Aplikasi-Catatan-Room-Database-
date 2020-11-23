@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#fff8dc">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e9967a"
+            android:fontFamily="@font/ranchers"
+            android:text="Hapus Semua Catatan" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="394dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="7dp"
+            android:textAlignment="center"
+            android:background="#ffdead"
+            android:fontFamily="@font/kavoon"
+            android:hint="Masukkan Catatan"
+            android:padding="12dp"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/bt_add"
+            android:fontFamily="@font/ranchers"
+            android:layout_marginTop="5dp"
+            android:text="Tambah Catatan"
+            android:background="#e9967a"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/list_row_main"/>
+
+</LinearLayout>
